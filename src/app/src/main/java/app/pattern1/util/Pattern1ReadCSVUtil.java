@@ -7,6 +7,12 @@ import java.util.List;
 import com.opencsv.CSVReader;
 
 public class Pattern1ReadCSVUtil {
+    /**
+     * CSVファイルを読み込む
+     * @param path CSVファイルのパス
+     * @return 読み込んだCSVデータ
+     * @throws Exception
+     */
     public static List<String[]> readCSV(String path) throws Exception{
         File file = new File(path);
         try (CSVReader csvReader = new CSVReader(new FileReader(file))) {            
@@ -15,6 +21,5 @@ public class Pattern1ReadCSVUtil {
             e.printStackTrace();
             throw new Exception();
         }
-    }
-   
+    }   
 }
