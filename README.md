@@ -29,7 +29,7 @@ gradle init
 
 実行
 ```
-./gradlew run
+gradle run --args="1 1"
 ```
 
 クリーン
@@ -42,6 +42,15 @@ gradle clean
 gradle build
 ```
 
+shadow(外部ライブラリをjar化する)
+```
+gradle shadowJar
+```
+
+jarの実行
+```
+java -jar ./app/build/libs/app-all.jar
+```
 
 
 
