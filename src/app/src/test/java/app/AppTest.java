@@ -7,8 +7,31 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test 
+    public void test1() {
+        // csv出力
+        String[] args = {"1","1"};
+        App.main(args);       
+    }
+
+    @Test 
+    public void test2() {
+        // csv読み込み
+        String[] args = {"1","2"};
+        App.main(args);       
+    }
+
+    @Test 
+    public void test3() {
+        // csv出力(Bean)
+        String[] args = {"2","1"};
+        App.main(args);       
+    }
+
+    @Test 
+    public void test4() {
+        // csv読み込み(Bean)
+        String[] args = {"2","2"};
+        App.main(args);       
     }
 }
