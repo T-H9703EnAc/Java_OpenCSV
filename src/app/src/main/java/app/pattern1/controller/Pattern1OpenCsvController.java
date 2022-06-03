@@ -6,7 +6,7 @@ import app.pattern1.services.Pattern1WriteService;
 
 public class Pattern1OpenCsvController {
     public Pattern1OpenCsvController(String[] args) {
-        switch (args[0]) {
+        switch (args[1]) {
             case "1":
                 Pattern1OpenCsvImpl writeService = new Pattern1WriteService();
                 writeService.callService();

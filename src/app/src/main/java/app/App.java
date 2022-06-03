@@ -3,12 +3,16 @@
  */
 package app;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import app.pattern1.controller.Pattern1OpenCsvController;
+import app.pattern2.controller.Pattern2OpenCsvController;
 
+public class App {
+    
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        if(args[0].equals("1")){
+            new Pattern1OpenCsvController(args);
+        } else {
+            new Pattern2OpenCsvController(args);
+        }
     }
 }
