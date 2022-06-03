@@ -22,7 +22,6 @@ public class Pattern1ReadService implements Pattern1OpenCsvImpl{
                 System.out.print(str + " ");
             }
             System.out.println();
-        }
-        
+        }       
     }    
 }
