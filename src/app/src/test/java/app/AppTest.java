@@ -4,7 +4,21 @@
 package app;
 
 import org.junit.Test;
+
+import app.pattern2.bean.UserInfoBean;
+import app.pattern2.bean.UserInfoBean2;
+import app.pattern2.util.Pattern2ReadCSVUtil;
+import app.pattern2.util.Pattern2WriteCSVUtil;
+
 import static org.junit.Assert.*;
+
+import java.io.FileWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.opencsv.bean.StatefulBeanToCsv;
+import com.opencsv.bean.StatefulBeanToCsvBuilder;
 
 public class AppTest {
     @Test 

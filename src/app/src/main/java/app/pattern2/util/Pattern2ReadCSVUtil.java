@@ -8,6 +8,13 @@ import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 public class Pattern2ReadCSVUtil<T> {
+    /**
+     * CSVファイルを読み込む
+     * @param bean JavaBeansのクラス
+     * @param path ファイルパスU
+     * @return 読み込んだCSVデータ
+     * @throws Exception
+     */
     public  List<T> readCSV(Class<T> bean, String path) throws Exception{
         File file = new File(path);
         try (CSVReader csvReader = new CSVReader(new FileReader(file))) {
